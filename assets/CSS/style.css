@@ -1,0 +1,250 @@
+/*---------- POLICES ----------*/
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/raleway/Raleway-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/raleway/Raleway-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/raleway/Raleway-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/raleway/Raleway-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*---------- RESET & BASE ----------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1160px;
+    margin: 0 auto;
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Lato", sans-serif;
+}
+
+h2 {
+    color: #17abb3;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e3e3e3;
+    margin-bottom: 1rem;
+}
+
+/*---------- HEADER ----------*/
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #17abb3;
+    color: #ffffff;
+    padding: 2rem 3rem;
+}
+
+.cv-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    object-fit: cover;
+    cursor: zoom-in;
+}
+
+.cv-identity {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.cv-identity h1 {
+    font-size: 2.5rem;
+}
+
+#job-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0.25rem;
+}
+
+header ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.5rem 2rem;
+    list-style: none;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+/*---------- ITEMS DE CONTACT ----------*/
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.contact-item img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+
+/*---------- MISE EN PAGE GÉNÉRALE ----------*/
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 320px;
+    flex-shrink: 0;
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem 2.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/*---------- ASIDE ----------*/
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+}
+
+
+aside section:first-child li {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+aside section:first-child data {
+    color: #17abb3;
+}
+
+
+.lang-name {
+    font-weight: bold;
+}
+
+
+.dot-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.dot-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 6px;
+    height: 6px;
+    background-color: #17abb3;
+}
+
+/*---------- CONTENU PRINCIPAL ----------*/
+
+.text-profil {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.main-content article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-left: 4px solid transparent;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.main-content article:hover {
+    background-color: #f5f5f5;
+    border-left-color: #17abb3;
+}
+
+.etablissement {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.main-content time {
+    color: #17abb3;
+    white-space: nowrap;
+}
+
+/*---------- FOOTER ----------*/
+
+footer {
+    background-color: #17abb3;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin-bottom: 0.75rem;
+}
+
+footer .contact-item img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+}
+
+footer a:hover img {
+    opacity: 0.6;
+}
