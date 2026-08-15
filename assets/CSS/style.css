@@ -70,6 +70,8 @@ hr {
 }
 
 /*---------- HEADER ----------*/
+/* display: flex pour aligner photo et bloc identité sur un axe horizontal.
+   La liste de contact utilise CSS Grid pour garantir une répartition 2x2 quel que soit le texte. */
 
 header {
     display: flex;
