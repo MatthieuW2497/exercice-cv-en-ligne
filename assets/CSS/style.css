@@ -29,6 +29,10 @@
 }
 
 /*---------- RESET & BASE ----------*/
+/* box-sizing: border-box sur * : largeurs/hauteurs incluent padding et bordure,
+   pour un dimensionnement prévisible partout dans le projet.
+   Largeur du CV fixée à 1160px et centrée, polices Lato (titres)
+   et Raleway (contenu) appliquées globalement. */
 
 * {
     margin: 0;
