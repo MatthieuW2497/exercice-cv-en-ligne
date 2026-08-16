@@ -259,3 +259,9 @@ footer .contact-item img {
 footer a:hover img {
     opacity: 0.6;
 }
+
+/*---------- NOTE DE FIN ----------*/
+/* Fichier réorganisé par grandes zones (polices, reset, header, aside,
+   contenu principal, footer) pour faciliter la navigation. Les règles
+   communes au header et au footer (.contact-item) sont mutualisées
+   plutôt que dupliquées. */
