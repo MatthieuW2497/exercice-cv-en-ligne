@@ -131,6 +131,9 @@ header ul {
 }
 
 /*---------- MISE EN PAGE GÉNÉRALE ----------*/
+/* display: flex sur main place aside et .main-content côte à côte.
+   aside a une largeur fixe (flex-shrink: 0 pour ne jamais rétrécir),
+   .main-content occupe le reste de l'espace disponible. */
 
 main {
     display: flex;
